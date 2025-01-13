@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from ubuntuapp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', Index, name='index'),
 ]
 
